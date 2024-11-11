@@ -1,0 +1,102 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos generales */
+body {
+    background-color: #000;  /* Fondo negro */
+    color: #fff;  /* Texto blanco */
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;  /* Fondo gris oscuro para el encabezado */
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    background-color: #555;  /* Color de fondo del logo */
+    margin-right: 10px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    padding: 5px;
+    margin-right: 15px;
+    background-color: #222;  /* Fondo oscuro para el cuadro de búsqueda */
+    color: #fff;  /* Texto blanco en el cuadro de búsqueda */
+    border: 1px solid #444;  /* Borde oscuro */
+}
+
+.iconos button {
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    color: #fff;  /* Color de texto blanco para los botones */
+    cursor: pointer;
+}
+
+.iconos button:hover {
+    color: #007BFF;  /* Color de texto azul al pasar el cursor */
+}
+
+/* Sección de bienvenida */
+.bienvenida {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.bienvenida h2 {
+    font-size: 24px;
+    color: #fff;  /* Color de texto blanco para el título de bienvenida */
+}
+
+/* Sección de categorías */
+.categorias {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.categoria {
+    text-align: center;
+    width: 30%;
+    color: #fff;  /* Color de texto blanco para las categorías */
+}
+
+.categoria .imagen {
+    width: 100%;
+    height: 150px;
+    background-color: #444;  /* Fondo gris oscuro para el área de imagen */
+    margin-bottom: 10px;
+}
+
+.categoria h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;  /* Color de texto blanco para los títulos de las categorías */
+}
+
+.categoria p {
+    font-size: 14px;
+    color: #ccc;  /* Texto en gris claro para el resumen */
+}
