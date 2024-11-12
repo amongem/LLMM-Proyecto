@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - BUNKER-451</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <figure class="logo"></figure>
+        <h1 class="titulo">BUNKER-451</h1>
+        
+        <nav class="nav">
+            <input type="text" placeholder="Búsqueda" class="search">
+            <a href="index.html" class="enlace">Inicio</a>
+            <a href="contacto.html" class="enlace">Contacto</a>
+            <a href="perfil.html" class="enlace">Perfil</a>
+        </nav>
+    </header>
+
+    <!-- Título de la página de registro -->
+    <section class="registro-titulo">
+        <h2>Registro</h2>
+    </section>
+
+    <!-- Formulario de Registro -->
+    <form class="formulario-registro">
+        <label class="etiqueta">
+            Nombre y Apellidos:
+            <input type="text" name="nombre" class="campo" required>
+        </label>
+        
+        <label class="etiqueta">
+            Dirección Email:
+            <input type="email" name="email" class="campo" required>
+        </label>
+        
+        <label class="etiqueta">
+            Contraseña:
+            <input type="password" name="contrasena" class="campo" required>
+        </label>
+        
+        <label class="etiqueta">
+            Confirmar Contraseña:
+            <input type="password" name="confirmar_contrasena" class="campo" required>
+        </label>
+        
+        <label class="etiqueta">
+            Nombre de Usuario:
+            <input type="text" name="usuario" class="campo" required>
+        </label>
+        
+        <label class="etiqueta checkbox-label">
+            <input type="checkbox" name="terminos" class="checkbox" required>
+            Aceptas los Términos y Condiciones
+        </label>
+
+        <a href="index.html" class="enlace-boton">Aceptar Registro</a>
+    </form>
+</body>
+</html>

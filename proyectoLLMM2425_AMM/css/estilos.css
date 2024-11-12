@@ -1,102 +1,147 @@
-/* Reset básico */
-* {
+/* ===== Estilos Generales ===== */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-/* Estilos generales */
-body {
-    background-color: #000;  /* Fondo negro */
-    color: #fff;  /* Texto blanco */
+h1, h2 {
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
 }
 
-/* Encabezado */
-header {
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ===== Barra de Navegación ===== */
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #333;  /* Fondo gris oscuro para el encabezado */
+    padding: 1rem;
+    background-color: #333;
 }
 
-.header-left {
+.navbar-logo {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.navbar-links {
     display: flex;
-    align-items: center;
+    gap: 1rem;
 }
 
-.logo {
-    width: 40px;
-    height: 40px;
-    background-color: #555;  /* Color de fondo del logo */
-    margin-right: 10px;
+.navbar-link {
+    color: #ccc;
+    font-size: 1rem;
 }
 
-.header-right {
-    display: flex;
-    align-items: center;
+/* ===== Página Principal ===== */
+
+.principal-header {
+    font-size: 2rem;
+    margin-top: 1rem;
 }
 
-.search {
-    padding: 5px;
-    margin-right: 15px;
-    background-color: #222;  /* Fondo oscuro para el cuadro de búsqueda */
-    color: #fff;  /* Texto blanco en el cuadro de búsqueda */
-    border: 1px solid #444;  /* Borde oscuro */
-}
-
-.iconos button {
-    background: none;
-    border: none;
-    padding: 5px 10px;
-    margin-left: 5px;
-    color: #fff;  /* Color de texto blanco para los botones */
-    cursor: pointer;
-}
-
-.iconos button:hover {
-    color: #007BFF;  /* Color de texto azul al pasar el cursor */
-}
-
-/* Sección de bienvenida */
-.bienvenida {
-    text-align: center;
-    padding: 20px 0;
-}
-
-.bienvenida h2 {
-    font-size: 24px;
-    color: #fff;  /* Color de texto blanco para el título de bienvenida */
-}
-
-/* Sección de categorías */
 .categorias {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    margin: 2rem 0;
 }
 
 .categoria {
     text-align: center;
     width: 30%;
-    color: #fff;  /* Color de texto blanco para las categorías */
+    background-color: #222;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
-.categoria .imagen {
+.categoria img {
     width: 100%;
-    height: 150px;
-    background-color: #444;  /* Fondo gris oscuro para el área de imagen */
-    margin-bottom: 10px;
+    border-radius: 0.25rem;
 }
 
-.categoria h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #fff;  /* Color de texto blanco para los títulos de las categorías */
+.categoria-titulo {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+    color: #eee;
 }
 
-.categoria p {
-    font-size: 14px;
-    color: #ccc;  /* Texto en gris claro para el resumen */
+.categoria-texto {
+    font-size: 1rem;
+    color: #bbb;
+    margin-top: 0.5rem;
 }
+
+/* ===== Página de Registro ===== */
+
+.registro-header {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.formulario-registro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20rem; /* 320px */
+    margin: 0 auto;
+    padding: 1.25rem; /* 20px */
+    background-color: #222;
+    border-radius: 0.5rem; /* 8px */
+}
+
+/* Etiquetas del formulario de registro */
+.etiqueta {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    margin-bottom: 0.625rem;
+    color: #ccc;
+    width: 100%;
+    padding-bottom: 0.625rem;
+    border-bottom: 0.0625rem solid #444; /* Línea separadora entre campos */
+}
+
+.campo {
+    width: 100%;
+    padding: 0.625rem; /* 10px */
+    font-size: 1rem;
+    background-color: #333;
+    color: #fff;
+    border: 0.0625rem solid #444; /* 1px */
+    border-radius: 0.25rem; /* 4px */
+    margin-top: 0.3125rem; /* 5px */
+}
+
+.checkbox-label {
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 0;
+    border-bottom: none; /* Sin línea en el último campo */
+}
+
+/* ===== Footer ===== */
+
+footer {
+    padding: 1rem;
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
