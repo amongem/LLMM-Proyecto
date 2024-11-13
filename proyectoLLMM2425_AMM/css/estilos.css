@@ -91,14 +91,14 @@ img {
 
 .registro-header {
     font-size: 2rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .formulario-registro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 20rem; 
+    max-width: 22rem; 
     margin: 0 auto;
     padding: 1.25rem; 
     background-color: #222;
@@ -114,7 +114,7 @@ img {
     color: #ccc;
     width: 100%;
     padding-bottom: 0.625rem;
-    border-bottom: 0.0625rem solid #444; /* Línea separadora entre campos */
+    border-bottom: 0.0625rem solid #423b3b; 
 }
 
 .campo {
@@ -132,7 +132,7 @@ img {
     flex-direction: row;
     align-items: center;
     padding-bottom: 0;
-    border-bottom: none; /* Sin línea en el último campo */
+    border-bottom: none; 
 }
 
 /* ===== Footer ===== */
