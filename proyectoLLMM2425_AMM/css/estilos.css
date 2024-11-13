@@ -1,51 +1,49 @@
 /* ===== Estilos Generales ===== */
-
-*{
+* {
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
     margin: 0;
     padding: 0;
+    color: #05ce48; 
 }
 
 body {
+    background-color: #000; 
+    color: #05ce48; 
     font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #fff;
-    margin: 0;
-    padding: 0;
 }
 
+/* Estilos de encabezados */
 h1, h2 {
     font-weight: normal;
-    color: #fff;
     text-align: center;
+    color: #0dda40; 
 }
 
+/* Enlaces */
 a {
-    color: #fff;
+    color: #0dda40; 
     text-decoration: none;
 }
 
+/* Imágenes */
 img {
     max-width: 100%;
     height: auto;
 }
 
 /* ===== Barra de Navegación ===== */
-
 .navbar {
     display: flex;
     justify-content: space-between; 
     align-items: center;
     padding: 1rem;
-    background-color: #333;
+    background-color: #565a54; 
 }
 
 .navbar-logo {
     font-size: 1.5rem;
-    color: #fff;
+    color: #0dda40; 
 }
 
 .navbar-links {
@@ -54,15 +52,20 @@ img {
 }
 
 .navbar-link {
-    color: #ccc;
+    color: #05ce48; 
     font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-link:hover {
+    color: #0dda40; /* Verde en hover */
 }
 
 /* ===== Página Principal ===== */
-
 .principal-header {
     font-size: 2rem;
     margin-top: 1rem;
+    color: #0dda40;
 }
 
 .categorias {
@@ -76,6 +79,7 @@ img {
     width: 30%;
     background-color: #000;
     padding: 1rem;
+    border: 0.0625rem solid #0dda40; 
     border-radius: 0.5rem;
 }
 
@@ -87,69 +91,81 @@ img {
 .categoria-titulo {
     font-size: 1.25rem;
     margin-top: 0.5rem;
-    color: #eee;
+    color: #0dda40; 
 }
 
 .categoria-texto {
     font-size: 1rem;
-    color: #bbb;
+    color: #28f16b; 
     margin-top: 0.5rem;
 }
 
-/* ===== Página de Registro ===== */
-
+/* ===== Formulario de Registro ===== */
 .registro-header {
     font-size: 2rem;
     margin-top: 2rem;
+    color: #0dda40;
 }
 
 .formulario-registro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 22rem; 
+    max-width: 22rem;
     margin: 0 auto;
-    padding: 1.25rem; 
-    background-color: #222;
-    border-radius: 0.5rem; 
+    padding: 1.25rem;
+    background-color: #222; 
+    border-radius: 0.5rem;
+    border: 0.0625rem solid #0dda40; 
 }
 
-/* Etiquetas del formulario de registro */
+/* Etiquetas del formulario */
 .etiqueta {
     display: flex;
     flex-direction: column;
     font-size: 1rem;
     margin-bottom: 0.625rem;
-    color: #ccc;
+    color: #05ce48; 
     width: 100%;
     padding-bottom: 0.625rem;
-    border-bottom: 0.0625rem solid #423b3b; 
+    border-bottom: 0.0625rem solid #423b3b;
 }
 
 .campo {
     width: 100%;
-    padding: 0.625rem; 
+    padding: 0.625rem;
     font-size: 1rem;
-    background-color: #333;
+    background-color: #333; 
     color: #fff;
-    border: 0.0625rem solid #444; 
-    border-radius: 0.25rem; 
-    margin-top: 0.3125rem; 
+    border: 0.0625rem solid #444;
+    border-radius: 0.25rem;
+    margin-top: 0.3125rem;
 }
 
-.checkbox-label {
-    flex-direction: row;
-    align-items: center;
-    padding-bottom: 0;
-    border-bottom: none; 
+/* Botón de Enviar */
+.enlace-enviar {
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    background-color: #0dda40; 
+    color: #000;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.enlace-enviar:hover {
+    background-color: #0bb634; 
 }
 
 /* ===== Footer ===== */
-
 footer {
     padding: 1rem;
-    background-color: #333;
-    color: #ccc;
+    background-color: #333; 
+    color: #05ce48; 
     text-align: center;
     font-size: 0.875rem;
 }

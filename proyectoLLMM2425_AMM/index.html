@@ -3,45 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog BUNKER-451</title>
+    <title>Página Principal</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <!-- Encabezado -->
-    <header class="header">
-        <figure class="logo"></figure>
-        <h1 class="titulo">BUNKER-451</h1>
-        
-        <nav class="nav">
-            <input type="text" placeholder="Búsqueda" class="search">
-            <a href="registro.html" class="enlace">Registro</a>
-            <a href="contacto.html" class="enlace">Contacto</a>
-            <a href="perfil.html" class="enlace">Perfil</a>
+
+    <!-- Barra de navegación -->
+    <header class="navbar">
+        <a href="index.html" class="navbar-logo">BUNKER-451</a>
+        <nav class="navbar-links">
+            <a href="index.html" class="navbar-link">Inicio</a>
+            <a href="registro.html" class="navbar-link">Registro</a>
+            <a href="contacto.html" class="navbar-link">Contacto</a>
         </nav>
     </header>
 
-    <!-- Título de Bienvenida -->
-    <section class="bienvenida">
-        <h2>BIENVENIDXS</h2>
+    <!-- Contenido principal -->
+    <h1 class="principal-header">Lo último del Underground</h1>
+    <section class="categorias">
+        <article class="categoria">
+            <img src="img/NOSFERATU.png" alt="Cine">
+            <h2 class="categoria-titulo">Cine</h2>
+            <p class="categoria-texto">Descubre las últimas novedades sobre películas y series.</p>
+        </article>
+        <article class="categoria">
+            <img src="img/stalker2.jpg" alt="Videojuegos">
+            <h2 class="categoria-titulo">Videojuegos</h2>
+            <p class="categoria-texto">Descubre las últimas novedades sobre vídeojuegos triple A, como indies.</p>
+        </article>
+        <article class="categoria">
+            <img src="img/machinegirl.png" alt="Música">
+            <h2 class="categoria-titulo">Música</h2>
+            <p class="categoria-texto">Descubre los últimos albúmes, singles y EPs del mundo de la música. </p>
+        </article>
     </section>
 
-    <!-- Categorías -->
-    <main class="categorias">
-        <article class="categoria">
-            <h3>Películas</h3>
-            <img src="img/NOSFERATU.png" alt="Películas" class="imagen">
-            <p>Texto resumiendo las últimas noticias referentes a películas...</p>
-        </article>
-        <article class="categoria">
-            <h3>Videojuegos</h3>
-            <img src="img/stalker2.jpg" alt="Videojuegos" class="imagen">
-            <p>Texto resumiendo las últimas noticias referentes a videojuegos...</p>
-        </article>
-        <article class="categoria">
-            <h3>Música</h3>
-            <img src="img/machinegirl.png" alt="Música" class="imagen">
-            <p>Texto resumiendo las últimas noticias referentes a música...</p>
-        </article>
-    </main>
+    <footer>
+        &copy; 2024 BUNKER-451. Todos los derechos reservados.
+    </footer>
+
 </body>
 </html>

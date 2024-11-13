@@ -7,22 +7,39 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <!-- Encabezado -->
-     <header class="header">
-        <figure class="logo"></figure>
-        <h1 class="titulo"> CONTACTO</h1>
 
-        <nav class="nav">
-            <input type="text" placeholder="Búsqueda" class="search">
-            <a href="index.html" class="enlace">Inicio</a>
-            <a href="registro" class="enlace">Registro</a>
-            <a href="perfil.html" class="enlace">Perfil</a>
+    <!-- Barra de navegación -->
+    <header class="navbar">
+        <a href="index.html" class="navbar-logo">BUNKER-451</a>
+        <nav class="navbar-links">
+            <a href="index.html" class="navbar-link">Inicio</a>
+            <a href="registro.html" class="navbar-link">Registro</a>
+            <a href="contacto.html" class="navbar-link">Contacto</a>
         </nav>
-     </header>
+    </header>
 
-<!--Título página de Contacto -->
-<section class="contacto titulo">
-    <h2>Ponte en contacto para cualquier aportación</h2>
-</section>
+    <!-- Encabezado de contacto -->
+    <h1 class="registro-header">Contáctanos</h1>
+
+    <!-- Formulario de contacto -->
+    <form class="formulario-registro">
+        <label class="etiqueta">Nombre:
+            <input type="text" class="campo" required>
+        </label>
+        <label class="etiqueta">Correo Electrónico:
+            <input type="email" class="campo" required>
+        </label>
+        <label class="etiqueta">Mensaje:
+            <textarea class="campo" rows="4" required></textarea>
+        </label>
+        <a href="#" class="enlace-enviar" onclick="enviarFormulario()">Enviar</a>
+    </form>
+
+    <footer>
+        &copy; 2024 BUNKER-451. Todos los derechos reservados.
+    </footer>
+
+    </script>
 </body>
 </html>
+

@@ -3,61 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro - BUNKER-451</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <!-- Encabezado -->
-    <header class="header">
-        <figure class="logo"></figure>
-        <h1 class="titulo">BUNKER-451</h1>
-        
-        <nav class="nav">
-            <input type="text" placeholder="Búsqueda" class="search">
-            <a href="index.html" class="enlace">Inicio</a>
-            <a href="contacto.html" class="enlace">Contacto</a>
-            <a href="perfil.html" class="enlace">Perfil</a>
+
+    <!-- Barra de navegación -->
+    <header class="navbar">
+        <a href="index.html" class="navbar-logo">BUNKER-451</a>
+        <nav class="navbar-links">
+            <a href="index.html" class="navbar-link">Inicio</a>
+            <a href="registro.html" class="navbar-link">Registro</a>
+            <a href="contacto.html" class="navbar-link">Contacto</a>
         </nav>
     </header>
 
-    <!-- Título de la página de registro -->
-    <section class="registro-titulo">
-        <h2>Registro</h2>
-    </section>
-
-    <!-- Formulario de Registro -->
+    <!-- Contenido de registro -->
+    <h1 class="registro-header">Registro</h1>
     <form class="formulario-registro">
-        <label class="etiqueta">
-            Nombre y Apellidos:
-            <input type="text" name="nombre" class="campo" required>
+        <label class="etiqueta">Nombre de Usuario:
+            <input type="text" class="campo" required>
         </label>
-        
-        <label class="etiqueta">
-            Dirección Email:
-            <input type="email" name="email" class="campo" required>
+        <label class="etiqueta">Correo Electrónico:
+            <input type="email" class="campo" required>
         </label>
-        
-        <label class="etiqueta">
-            Contraseña:
-            <input type="password" name="contrasena" class="campo" required>
+        <label class="etiqueta">Contraseña:
+            <input type="password" class="campo" required>
         </label>
-        
-        <label class="etiqueta">
-            Confirmar Contraseña:
-            <input type="password" name="confirmar_contrasena" class="campo" required>
-        </label>
-        
-        <label class="etiqueta">
-            Nombre de Usuario:
-            <input type="text" name="usuario" class="campo" required>
-        </label>
-        
-        <label class="etiqueta checkbox-label">
-            <input type="checkbox" name="terminos" class="checkbox" required>
-            Aceptas los Términos y Condiciones
-        </label>
+        <label class="etiqueta">Confirmar Contraseña:
+            <input type="password" class="campo" required>
 
-        <a href="index.html" class="enlace-boton">Aceptar Registro</a>
+        <a href="#" class="enlace-enviar" onclick="enviarFormulario()">Enviar</a>
     </form>
+
+    <footer>
+        &copy; 2024 BUNKER-451. Todos los derechos reservados.
+    </footer>
+
+    </script>
 </body>
 </html>
