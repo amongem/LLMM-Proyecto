@@ -21,3 +21,21 @@ Desarrollar una aplicación web usando los conocimientos de HTML5 y CSS3 vistos 
 - *Pxs* se usarán *rem*
 - *IDs* en su lugar, utilizaré *class*
 - *Buttons* pudiendo usar directamente enlaces
+
+
+## FASE 1: Planificación del Proyecto (Wireframe y estructura HTML)
+
+**Objetivo:** Planificar la estructura y diseño de la aplicación web antes de empezar a desarrollarla. Utilizaré Balsamiq para esta tarea.
+
+***Actividades:***
+
+**1. Análisis de requisitos y objetivos del proyecto:**
+
+- La aplicación web tratará de un *blog* que recoge distintas noticias del mundo del cine, videojuegos y música. Para ello se hará un wireframe para planificar la estructura. Se usará la aplicación *Balsamiq*, debido a la sencillez que ofrece y que por supuesto, cuenta con una prueba gratuita de 30 días. Para la estructura html y css, optaré por el "IDE" *Visual Studio Code* por las mismas razones, dificultad y precio.
+
+**2. Creación del wireframe con Balsamiq:**
+
+- Siguiendo la estructura de los *blogs* he optado por un portal sencillo, que se separe en las categorías que quiero abarcar, cada una con sus secciones. 
+
+- Empezando por la página de inicio, se ha optado por la vieja confiable de presentar las secciones, no sin antes contar co una barra de navegación que incluye opciones de volver a la misma página de inicio, registrarse y un apartado para contactar vía email o mensaje.
+
