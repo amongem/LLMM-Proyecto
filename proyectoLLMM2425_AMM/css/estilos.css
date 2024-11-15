@@ -58,47 +58,43 @@ img {
 }
 
 .navbar-link:hover {
-    color: #0dda40; /* Verde en hover */
+    color: #0dda40; 
 }
 
 /* ===== Página Principal ===== */
-.principal-header {
-    font-size: 2rem;
-    margin-top: 1rem;
-    color: #0dda40;
-}
-
 .categorias {
     display: flex;
-    justify-content: space-around;
-    margin: 2rem 0;
+    justify-content: center; 
+    gap: 2rem; 
+    max-width: 75rem; 
+    margin: 0 auto; 
+    padding: 2rem 1rem; 
 }
 
 .categoria {
     text-align: center;
-    width: 30%;
+    width: 18.75rem; 
     background-color: #000;
     padding: 1rem;
     border: 0.0625rem solid #0dda40; 
     border-radius: 0.5rem;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
+.categoria:hover {
+    background-color: #111;
+    transform: scale(1.05); 
+}
+
+/* Ajusta las imágenes dentro de las tarjetas */
 .categoria img {
     width: 100%;
+    height: 11.25rem; 
+    object-fit: cover; 
     border-radius: 0.25rem;
 }
 
-.categoria-titulo {
-    font-size: 1.25rem;
-    margin-top: 0.5rem;
-    color: #0dda40; 
-}
 
-.categoria-texto {
-    font-size: 1rem;
-    color: #28f16b; 
-    margin-top: 0.5rem;
-}
 
 /* ===== Formulario de Registro ===== */
 .registro-header {
@@ -144,12 +140,12 @@ img {
 
 /* Botón de Enviar */
 .enlace-enviar {
-    padding: 0.625rem 1.25rem;
+    padding: 0.7rem 1.25rem;
     font-size: 1rem;
     background-color: #0dda40; 
     color: #000;
     border: none;
-    border-radius: 0.25rem;
+    border-radius: 0.50rem;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -170,3 +166,40 @@ footer {
     font-size: 0.875rem;
 }
 
+/* ===== Estilos para la Página de Secciones ===== */
+.secciones-contenido {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem;
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.seccion {
+    background-color: #222; 
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 0.0625rem solid #0dda40; 
+    text-align: center;
+}
+
+.seccion-titulo {
+    font-size: 1.5rem;
+    color: #0dda40; 
+    margin-bottom: 0.5rem;
+}
+
+.seccion-descripcion {
+    font-size: 1rem;
+    color: #bbb; 
+    margin-bottom: 1rem;
+}
+
+.seccion-imagen {
+    width: 100%;
+    height: 200px; 
+    background-color: #333; 
+    border: 0.0625rem solid #0dda40; 
+    border-radius: 0.25rem;
+}
