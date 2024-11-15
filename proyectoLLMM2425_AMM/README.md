@@ -39,4 +39,3 @@ Desarrollar una aplicación web usando los conocimientos de HTML5 y CSS3 vistos 
 
 - Empezando por la página de inicio, se ha optado por la vieja confiable de presentar las secciones, no sin antes contar co una barra de navegación que incluye opciones de volver a la misma página de inicio, registrarse y un apartado para contactar vía email o mensaje.
 
-!()
