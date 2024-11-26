@@ -1,7 +1,7 @@
 /* ===== Estilos Generales ===== */
 * {
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: monospace, sans-serif;
     margin: 0;
     padding: 0;
     color: #05ce48; 
@@ -10,7 +10,7 @@
 body {
     background-color: #000; 
     color: #05ce48; 
-    font-family: Arial, sans-serif;
+    font-family: monospace, sans-serif;
 }
 
 /* Estilos de encabezados */
@@ -22,7 +22,7 @@ h1, h2 {
 
 /* Enlaces */
 a {
-    color: #0dda40; 
+    color: #77fd98; 
     text-decoration: none;
 }
 
@@ -42,8 +42,13 @@ img {
 }
 
 .navbar-logo {
+    color: #05ce48;
     font-size: 1.5rem;
-    color: #0dda40; 
+    transition: color 0.3s;
+}
+
+.navbar-logo:hover {
+    color: #77fd98; 
 }
 
 .navbar-links {
@@ -58,14 +63,14 @@ img {
 }
 
 .navbar-link:hover {
-    color: #0dda40; 
+    color: #77fd98; 
 }
 
 /* ===== Página Principal ===== */
 .categorias {
     display: flex;
     justify-content: center; 
-    gap: 2rem; 
+    gap: 3rem; 
     max-width: 75rem; 
     margin: 0 auto; 
     padding: 2rem 1rem; 
@@ -80,6 +85,7 @@ img {
     border-radius: 0.5rem;
     transition: background-color 0.3s, transform 0.3s;
 }
+
 
 .categoria:hover {
     background-color: #111;
@@ -154,7 +160,7 @@ img {
 }
 
 .enlace-enviar:hover {
-    background-color: #0bb634; 
+    background-color: #90f5a8; 
 }
 
 /* ===== Footer ===== */
@@ -203,3 +209,4 @@ footer {
     border: 0.0625rem solid #0dda40; 
     border-radius: 0.25rem;
 }
+
