@@ -22,7 +22,6 @@ Desarrollar una aplicación web usando los conocimientos de HTML5 y CSS3 vistos 
 - *IDs* en su lugar, utilizaré *class*
 - *Buttons* pudiendo usar directamente enlaces
 
-
 ## FASE 1: Planificación del Proyecto (Wireframe y estructura HTML)
 
 **Objetivo:** Planificar la estructura y diseño de la aplicación web antes de empezar a desarrollarla. Utilizaré Balsamiq para esta tarea.
@@ -38,4 +37,3 @@ Desarrollar una aplicación web usando los conocimientos de HTML5 y CSS3 vistos 
 - Siguiendo la estructura de los *blogs* he optado por un portal sencillo, que se separe en las categorías que quiero abarcar, cada una con sus secciones. 
 
 - Empezando por la página de inicio, se ha optado por la vieja confiable de presentar las secciones, no sin antes contar co una barra de navegación que incluye opciones de volver a la misma página de inicio, registrarse y un apartado para contactar vía email o mensaje.
-

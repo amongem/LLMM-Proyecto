@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Acceso</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-
     <!-- Barra de navegación -->
     <header class="navbar">
         <a href="index.html" class="navbar-logo">BUNKER-451</a>
@@ -18,29 +17,21 @@
         </nav>
     </header>
 
-    <!-- Encabezado de contacto -->
-    <h1 class="registro-header">Contáctanos</h1>
+    <!-- Contenido Principal -->
+    <main class="acceso-contenido">
+        <h1 class="acceso-titulo">Accede a tu Perfil</h1>
+        <p class="acceso-descripcion">Elige una opción para continuar:</p>
 
-    <!-- Formulario de contacto -->
-    <form class="formulario-registro">
-        <label class="etiqueta">Correo Electrónico:
-            <input type="text" class="campo" required>
-        </label>
-        <label class="etiqueta">Asunto:
-            <input type="email" class="campo" required>
-        </label>
-        <label class="etiqueta">Mensaje:
-            <textarea class="campo" rows="4" required></textarea>
-        </label>
-        <a href="#" class="enlace-enviar" onclick="enviarFormulario()">Enviar</a>
-    </form>
-    
+        <!-- Opciones de acceso -->
+        <section class="opciones-acceso">
+            <a href="registro.html" class="boton-acceso">Registrarse</a>
+            <a href="perfilusuario.html" class="boton-acceso">Acceder</a>
+        </section>
+    </main>
 
+    <!-- Footer -->
     <footer>
         &copy; 2024 BUNKER-451. Todos los derechos reservados.
     </footer>
-
-    </script>
 </body>
 </html>
-

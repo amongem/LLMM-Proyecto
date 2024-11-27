@@ -5,6 +5,8 @@
     margin: 0;
     padding: 0;
     color: #05ce48; 
+
+    flex-wrap:wrap;
 }
 
 body {
@@ -37,7 +39,7 @@ img {
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    padding: 1rem;
+    padding: 0.9rem;
     background-color: #565a54; 
 }
 
@@ -52,7 +54,7 @@ img {
 }
 
 .navbar-links {
-    display: flex;
+    display:inline-flex;
     gap: 1rem;
 }
 
@@ -67,17 +69,26 @@ img {
 }
 
 /* ===== Página Principal ===== */
+
+.principal-header {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    max-width: 95rem;
+    margin: 0 auto;
+}
+
 .categorias {
     display: flex;
     justify-content: center; 
-    gap: 3rem; 
+    gap: 6rem; 
     max-width: 75rem; 
     margin: 0 auto; 
     padding: 2rem 1rem; 
 }
 
 .categoria {
-    text-align: center;
+    text-align: center; 
     width: 18.75rem; 
     background-color: #000;
     padding: 1rem;
@@ -99,14 +110,60 @@ img {
     object-fit: cover; 
     border-radius: 0.25rem;
 }
+/* ===== Estilos para la Página de Acceso ===== */
+.acceso-contenido {
+    text-align: center;
+    margin: 4rem auto;
+    max-width: 30rem;
+    padding: 2rem;
+    background-color: #222; 
+    border-radius: 0.5rem;
+    border: 0.1rem solid #0dda40;
+}
 
+.acceso-titulo {
+    font-size: 2.5rem;
+    color: #0dda40;
+    margin-bottom: 1rem;
+    font-family: 'Orbitron', sans-serif; 
+}
 
+.acceso-descripcion {
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-bottom: 2rem;
+}
+
+.opciones-acceso {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.boton-acceso {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    color: #000;
+    background-color: #0dda40;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.boton-acceso:hover {
+    background-color: #0bb634;
+    transform: scale(1.05);
+}
 
 /* ===== Formulario de Registro ===== */
 .registro-header {
     font-size: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     color: #0dda40;
+    padding-bottom: 1.2rem;
 }
 
 .formulario-registro {
@@ -119,6 +176,8 @@ img {
     background-color: #222; 
     border-radius: 0.5rem;
     border: 0.0625rem solid #0dda40; 
+    bottom: 1.5rem;
+    
 }
 
 /* Etiquetas del formulario */
@@ -165,7 +224,8 @@ img {
 
 /* ===== Footer ===== */
 footer {
-    padding: 1rem;
+    padding: 1.2rem;
+    padding-bottom: 2rem;
     background-color: #333; 
     color: #05ce48; 
     text-align: center;
@@ -173,40 +233,141 @@ footer {
 }
 
 /* ===== Estilos para la Página de Secciones ===== */
+
+/* Página de Secciones */
 .secciones-contenido {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;  
     max-width: 70rem;
     margin: 2rem auto;
     padding: 1rem;
 }
 
 .seccion {
-    background-color: #222; 
+    background-color: #222;
     padding: 1.5rem;
     border-radius: 0.5rem;
-    border: 0.0625rem solid #0dda40; 
+    border: 0.0625rem solid #0dda40;
     text-align: center;
+    width: 100%; 
 }
 
 .seccion-titulo {
     font-size: 1.5rem;
-    color: #0dda40; 
+    color: #0dda40;
     margin-bottom: 0.5rem;
 }
 
 .seccion-descripcion {
     font-size: 1rem;
-    color: #bbb; 
+    color: #bbb;
     margin-bottom: 1rem;
 }
 
 .seccion-imagen {
     width: 100%;
-    height: 200px; 
-    background-color: #333; 
-    border: 0.0625rem solid #0dda40; 
+    height: 12.5rem; 
+    background-color: #333;
+    border: 0.0625rem solid #0dda40;
     border-radius: 0.25rem;
 }
+/* Perfil de Usuario*/
+.perfil-contenido {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
 
+/* Título del perfil */
+.perfil-header {
+    text-align: center;
+    font-size: 2rem;
+    color: #0dda40;
+    margin-bottom: 1rem;
+}
+
+/* Sección de perfil */
+.perfil-seccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.perfil-foto {
+    text-align: center;
+}
+
+.perfil-foto-img {
+    width: 9.5rem;
+    height: 9.5rem;
+    border-radius: 50%;
+    object-fit:contain;
+    border: 0.125rem solid #0dda40;
+}
+
+.perfil-nombre {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+    color: #0dda40;
+}
+
+/* Información del perfil */
+.perfil-info {
+    width: 100%;
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.perfil-info-header {
+    font-size: 1.5rem;
+    color: #0dda40;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.perfil-bio {
+    font-size: 1.1rem;
+    color: #bbb;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.perfil-detalles {
+    font-size: 1rem;
+    color: #bbb;
+    list-style: none;
+    padding: 0;
+}
+
+.perfil-detalles li {
+    margin-bottom: 1rem;
+}
+
+.perfil-detalles li strong {
+    color: #0dda40;
+}
+
+/* Footer */
+footer {
+    background-color: #121212;
+    padding: 2rem;
+    text-align: center;
+    color: #bbb;
+}
+
+footer a {
+    color: #0dda40;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
