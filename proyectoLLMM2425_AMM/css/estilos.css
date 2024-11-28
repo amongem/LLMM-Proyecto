@@ -41,6 +41,7 @@ img {
     align-items: center;
     padding: 0.9rem;
     background-color: #565a54; 
+    position: relative;
 }
 
 .navbar-logo {
@@ -53,8 +54,18 @@ img {
     color: #77fd98; 
 }
 
+.navbar-title {
+    font-size: 1.5rem;
+    color: #0dda40;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    text-align: center;
+    margin: 0; /* Eliminar márgenes predeterminados */
+}
+
 .navbar-links {
-    display:inline-flex;
+    display: inline-flex;
     gap: 1rem;
 }
 
@@ -67,6 +78,7 @@ img {
 .navbar-link:hover {
     color: #77fd98; 
 }
+
 
 /* ===== Página Principal ===== */
 
@@ -225,7 +237,7 @@ img {
 /* ===== Footer ===== */
 footer {
     padding: 1.2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     background-color: #333; 
     color: #05ce48; 
     text-align: center;
@@ -251,6 +263,13 @@ footer {
     border: 0.0625rem solid #0dda40;
     text-align: center;
     width: 100%; 
+    transition: background-color 0.3s, transform 0.3s; /* Asegura la transición */
+}
+
+/* Aplica el hover a toda la sección */
+.seccion:hover {
+    background-color: #111;
+    transform: scale(1.05); 
 }
 
 .seccion-titulo {
@@ -267,11 +286,12 @@ footer {
 
 .seccion-imagen {
     width: 100%;
-    height: 12.5rem; 
+    height: 35rem; 
     background-color: #333;
     border: 0.0625rem solid #0dda40;
     border-radius: 0.25rem;
 }
+
 /* Perfil de Usuario*/
 .perfil-contenido {
     max-width: 75rem;
@@ -370,4 +390,39 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* ===== Estilos para la página de Últimos Lanzamientos ===== */
+article {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #222;
+    border: 0.0625rem solid #0dda40;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.titulo-articulo {
+    font-size: 2rem;
+    color: #0dda40;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contenido-articulo {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #bbb;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.imagen-articulo {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    border: 0.0625rem solid #0dda40;
 }
