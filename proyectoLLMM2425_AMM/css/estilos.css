@@ -394,29 +394,44 @@ footer a:hover {
 
 /* ===== Estilos para la página de Últimos Lanzamientos ===== */
 
+/* Contenedor principal del artículo */
+article {
+    max-width: 70rem; /* Limita el ancho del artículo para pantallas grandes */
+    margin: 2rem auto; /* Espaciado superior/inferior y centra horizontalmente */
+    padding: 2rem 1rem; /* Añade espacio interno */
+}
+
+/* Título del artículo */
 .titulo-articulo {
     font-size: 2rem;
     color: #0dda40;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem; /* Espacio entre el título y el contenido */
 }
 
+/* Contenido del artículo */
 .contenido-articulo {
     font-size: 1.2rem;
     line-height: 1.6;
     color: #bbb;
     text-align: justify;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem; /* Espacio entre párrafos */
+    margin-left: auto; /* Alineación dinámica */
+    margin-right: auto; /* Alineación dinámica */
+    max-width: 65rem; /* Limitar ancho en el contenido */
 }
 
+/* Imagen dentro del artículo */
 .imagen-articulo {
     display: block;
-    margin: 1rem auto;
-    max-width: 100%;
+    margin: 1rem auto; /* Centra la imagen */
+    max-width: 100%; /* Imagen responsiva */
     height: auto;
-    border-radius: 0.25rem;
-    border: 0.0625rem solid #0dda40;
+    border-radius: 0.25rem; /* Bordes redondeados */
+    border: 0.0625rem solid #0dda40; /* Bordes visibles */
 }
+
+
 
 /* Media Queries para Pantallas pequeñas (tablet y móvil) */
 @media (max-width: 1200px) {
