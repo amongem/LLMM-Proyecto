@@ -242,6 +242,7 @@ footer {
     color: #05ce48; 
     text-align: center;
     font-size: 0.875rem;
+    min-height: 25%;
 }
 
 /* ===== Estilos para la Página de Secciones ===== */
@@ -374,31 +375,39 @@ footer {
     color: #0dda40;
 }
 
-/* Footer */
 footer {
     background-color: #121212;
-    padding: 2rem;
-    text-align: center;
     color: #bbb;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: auto; 
+    font-size: 0.875rem;
+    width: 100%; 
+    border-top: 1px solid #0dda40; 
 }
 
+/* Estilo para enlaces dentro del footer */
 footer a {
     color: #0dda40;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
     text-decoration: underline;
+    color: #77fd98;
 }
+
+
 
 /* ===== Estilos para la página de Últimos Lanzamientos ===== */
 
 /* Contenedor principal del artículo */
 article {
-    max-width: 70rem; /* Limita el ancho del artículo para pantallas grandes */
-    margin: 2rem auto; /* Espaciado superior/inferior y centra horizontalmente */
-    padding: 2rem 1rem; /* Añade espacio interno */
+    max-width: 70rem; 
+    margin: 2rem auto; 
+    padding: 2rem 1rem; 
 }
 
 /* Título del artículo */
@@ -406,7 +415,7 @@ article {
     font-size: 2rem;
     color: #0dda40;
     text-align: center;
-    margin-bottom: 2rem; /* Espacio entre el título y el contenido */
+    margin-bottom: 2rem; 
 }
 
 /* Contenido del artículo */
@@ -415,20 +424,27 @@ article {
     line-height: 1.6;
     color: #bbb;
     text-align: justify;
-    margin-bottom: 1.5rem; /* Espacio entre párrafos */
-    margin-left: auto; /* Alineación dinámica */
-    margin-right: auto; /* Alineación dinámica */
-    max-width: 65rem; /* Limitar ancho en el contenido */
+    margin-bottom: 1.5rem;
+    margin-left: auto; 
+    margin-right: auto; 
+    max-width: 65rem; 
 }
 
+/* Asegura que el body ocupe toda la pantalla */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;
+} 
 /* Imagen dentro del artículo */
 .imagen-articulo {
     display: block;
-    margin: 1rem auto; /* Centra la imagen */
-    max-width: 100%; /* Imagen responsiva */
+    margin: 1rem auto; 
+    max-width: 100%; 
     height: auto;
-    border-radius: 0.25rem; /* Bordes redondeados */
-    border: 0.0625rem solid #0dda40; /* Bordes visibles */
+    border-radius: 0.25rem; 
+    border: 0.0625rem solid #0dda40; 
 }
 
 
