@@ -50,11 +50,11 @@ Este paso es muy importante porque me da una visión clara de cómo se verá la 
 
 Más abajo te muestro los prototipos que hice en Balsamiq, hay que tener en cuenta que de cara a la versión final si que se cambió algún que otro detalle. Bien por demasiada ambición o simplemente por comodidad.
 
-![Pagina Principal](LLMM-Proyecto/LLMM-Proyecto/proyectoLLMM2425_AMM/wireframe/paginaprincipal.png)
+![Pagina Principal](./proyectoLLMM2425_AMM/wireframe/paginaprincipal.png)
 
-![Pagina de Registro](LLMM-Proyecto/LLMM-Proyecto/proyectoLLMM2425_AMM/wireframe/registro.png)
+![Pagina de Registro](./proyectoLLMM2425_AMM/wireframe/registro.png)
 
-![Pagina de Contacto](LLMM-Proyecto/LLMM-Proyecto/proyectoLLMM2425_AMM/wireframe/contacto.png)
+![Pagina de Contacto](./proyectoLLMM2425_AMM/wireframe/contacto.png)
 
 ### 3. Estructura HTML planificada
 
@@ -132,7 +132,7 @@ Algunos de los estilos más importantes que apliqué fueron:
 - **Estilos globales**: Definí la tipografía (fuentes), colores y márgenes generales para que todo se vea de forma coherente.
 - **Cabecera y pie de página**: Para el encabezado y el pie de página, utilicé colores y disposiciones simples, con una barra de navegación centrada.
   
-También añadí algunos **efectos y transiciones** con CSS. Por ejemplo, cuando el usuario pasa el ratón sobre un enlace, cambia de color de forma suave, o cuando se situa el ratón encima de una sección, esta se agranda destacando entre las demás. 
+También añadí algunos **efectos y transiciones** con CSS. Por ejemplo, cuando el usuario pasa el ratón sobre un enlace, cambia de color de forma suave, o cuando se situa el ratón encima de una sección, esta se agranda destacando entre las demás.
 
 #### 3.3 Diseño responsivo
 
@@ -203,3 +203,8 @@ Aunque no usé herramientas avanzadas, probé la página directamente en el nave
 - **Diseño adaptable**: Realicé ajustes en los estilos para garantizar que el diseño se vea bien en pantallas pequeñas y grandes.
 
 Aunque no usé herramientas avanzadas, hice un esfuerzo por validar y optimizar el proyecto a mano, asegurándome de que cumpla con los objetivos de esta fase.
+
+## Fase 4: Videotutorial
+
+
+### [Link al Videotutorial](https://www.youtube.com/watch?v=lhpDpVUvg-w) obviar la marca de agua del windows piratilla jejjej 

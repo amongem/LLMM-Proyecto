@@ -95,13 +95,13 @@ img {
     justify-content: center; 
     gap: 6rem; 
     max-width: 75rem; 
-    margin: 0 auto; 
-    padding: 2rem 1rem; 
+    margin: 0 auto;  
+    padding-top: 11rem
 }
 
 .categoria {
     text-align: center; 
-    width: 18.75rem; 
+    width: 20rem; 
     background-color: #000;
     padding: 1rem;
     border: 0.0625rem solid #0dda40; 
@@ -247,7 +247,6 @@ footer {
 
 /* ===== Estilos para la Página de Secciones ===== */
 
-/* Página de Secciones */
 .secciones-contenido {
     display: flex;
     flex-direction: column;
@@ -328,8 +327,8 @@ footer {
     width: 9.5rem;
     height: 9.5rem;
     border-radius: 50%;
-    object-fit:contain;
-    border: 0.125rem solid #0dda40;
+    object-fit:fill
+    border 0.125rem solid #0dda40;
 }
 
 .perfil-nombre {
@@ -383,7 +382,7 @@ footer {
     margin-top: auto; 
     font-size: 0.875rem;
     width: 100%; 
-    border-top: 1px solid #0dda40; 
+    border-top: 0.063rem solid #0dda40; 
 }
 
 /* Estilo para enlaces dentro del footer */
@@ -398,8 +397,6 @@ footer a:hover {
     text-decoration: underline;
     color: #77fd98;
 }
-
-
 
 /* ===== Estilos para la página de Últimos Lanzamientos ===== */
 
@@ -431,6 +428,7 @@ article {
 }
 
 /* Asegura que el body ocupe toda la pantalla */
+
 body {
     display: flex;
     flex-direction: column;
@@ -447,9 +445,8 @@ body {
     border: 0.0625rem solid #0dda40; 
 }
 
-
-
 /* Media Queries para Pantallas pequeñas (tablet y móvil) */
+
 @media (max-width: 75rem) {
     .navbar {
         flex-direction: column;
